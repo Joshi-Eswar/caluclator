@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(201, 211, 189);
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.caluclator {
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0, 0.5);
+    /* animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; */
+    animation: conzer 10s linear .1s infinite alternate;
+    /* The animation code */
+}
+
+@keyframes conzer {
+    0% {
+        background-color: #ffa500;
+    }
+    25% {
+        background-color: #7d93c0;
+    }
+    50% {
+        background-color: rgb(168, 119, 214);
+    }
+    75% {
+        background-color: #c9309b
+    }
+    100% {
+        background-color: #eaedef;
+    }
+}
+
+#result {
+    height: 120px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#output {
+    height: 60px;
+    margin: 10px 20px;
+    text-align: right;
+    font-size: 24px;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.number,
+.empty {
+    background: #eaedef;
+}
+
+.operator:active,
+.number:active {
+    font-size: 13px;
+}
+
+.operator:focus,
+.number:focus {
+    outline: 0;
+}
+
+button:nth-child(1) {
+    font-size: 26px;
+    background-color: rgb(219, 179, 105);
+}
+
+button:nth-child(2) {
+    font-size: 26px;
+    background-color: rgb(230, 175, 175);
+}
+
+button:nth-child(3) {
+    font-size: 26px;
+    background-color: rgb(168, 119, 214);
+}
+
+button:nth-child(4) {
+    font-size: 26px;
+    background-color: #20b2aa;
+}
+
+button:nth-child(8) {
+    font-size: 26px;
+    background-color: #ffa500;
+}
+
+button:nth-child(12) {
+    font-size: 26px;
+    background-color: #f08080;
+}
+
+button:nth-child(16) {
+    font-size: 26px;
+    background-color: #7d93c0;
+}
+
+button:nth-child(20) {
+    font-size: 26px;
+    background-color: #9477af
+}
